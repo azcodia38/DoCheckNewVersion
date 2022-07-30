@@ -7,6 +7,9 @@
 // Firebase
 #import <Firebase.h>
 
+// #import <UserNotifications/UserNotifications.h>
+// #import <RNCPushNotificationIOS.h>
+
 #import <React/RCTAppSetupUtils.h>
 
 #if RCT_NEW_ARCH_ENABLED

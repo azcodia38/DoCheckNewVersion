@@ -17,6 +17,7 @@ target 'DoCheck' do
   pod 'GoogleUtilities', :modular_headers => true
   pod 'GoogleSignIn', '~> 6.2.2'
   pod 'RNFS', :path => '../node_modules/react-native-fs'
+  # pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
   $RNFirebaseAsStaticFramework = true
 
   use_react_native!(
