@@ -20,6 +20,8 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.69.3)
   - Firebase (9.3.0):
     - Firebase/Core (= 9.3.0)
+  - Firebase/Analytics (9.3.0):
+    - Firebase/Core
   - Firebase/Core (9.3.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 9.3.0)
@@ -503,7 +505,7 @@ PODS:
     - React-Core
   - RNCAsyncStorage (1.17.7):
     - React-Core
-  - RNCClipboard (1.10.0):
+  - RNCClipboard (1.5.1):
     - React-Core
   - RNCPushNotificationIOS (1.10.1):
     - React-Core
@@ -511,6 +513,10 @@ PODS:
     - React-Core
   - RNDeviceInfo (10.0.2):
     - React-Core
+  - RNFBAnalytics (15.2.0):
+    - Firebase/Analytics (= 9.3.0)
+    - React-Core
+    - RNFBApp
   - RNFBApp (15.2.0):
     - Firebase/CoreOnly (= 9.3.0)
     - React-Core
@@ -643,10 +649,11 @@ DEPENDENCIES:
   - "RNAppleAuthentication (from `../node_modules/@invertase/react-native-apple-authentication`)"
   - RNAudioRecorderPlayer (from `../node_modules/react-native-audio-recorder-player`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
-  - "RNCClipboard (from `../node_modules/@react-native-clipboard/clipboard`)"
+  - "RNCClipboard (from `../node_modules/@react-native-community/clipboard`)"
   - "RNCPushNotificationIOS (from `../node_modules/@react-native-community/push-notification-ios`)"
   - "RNDateTimePicker (from `../node_modules/@react-native-community/datetimepicker`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
+  - "RNFBAnalytics (from `../node_modules/@react-native-firebase/analytics`)"
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
   - RNFS (from `../node_modules/react-native-fs`)
@@ -776,13 +783,15 @@ EXTERNAL SOURCES:
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
   RNCClipboard:
-    :path: "../node_modules/@react-native-clipboard/clipboard"
+    :path: "../node_modules/@react-native-community/clipboard"
   RNCPushNotificationIOS:
     :path: "../node_modules/@react-native-community/push-notification-ios"
   RNDateTimePicker:
     :path: "../node_modules/@react-native-community/datetimepicker"
   RNDeviceInfo:
     :path: "../node_modules/react-native-device-info"
+  RNFBAnalytics:
+    :path: "../node_modules/@react-native-firebase/analytics"
   RNFBApp:
     :path: "../node_modules/@react-native-firebase/app"
   RNFBMessaging:
@@ -878,10 +887,11 @@ SPEC CHECKSUMS:
   RNAppleAuthentication: 0571c08da8c327ae2afc0261b48b4a515b0286a6
   RNAudioRecorderPlayer: 308940de4f9d1448a064874fd9d83479ae47c7a7
   RNCAsyncStorage: d81ee5c3db1060afd49ea7045ad460eff82d2b7d
-  RNCClipboard: f1736c75ab85b627a4d57587edb4b60999c4dd80
+  RNCClipboard: 41d8d918092ae8e676f18adada19104fa3e68495
   RNCPushNotificationIOS: 87b8d16d3ede4532745e05b03c42cff33a36cc45
   RNDateTimePicker: 30e5eb06acbabcf031e11e354eb24283f44e1813
   RNDeviceInfo: 0a7c1d2532aa7691f9b9925a27e43af006db4dae
+  RNFBAnalytics: fc85d9405232a3b6d913b48baa58da39f1da52bf
   RNFBApp: c9723c07e0a315538dfc9deea60ffb072b2f44d6
   RNFBMessaging: 084f466c02f3148884ef22fa86db5473f80e8433
   RNFS: 4ac0f0ea233904cb798630b3c077808c06931688
