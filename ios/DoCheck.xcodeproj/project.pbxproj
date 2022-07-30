@@ -14,6 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-DoCheck-DoCheckTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-DoCheck-DoCheckTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		FA3C12902895031400050BC9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3C128F2895031400050BC9 /* AddressBook.framework */; };
+		FA3C12922895032600050BC9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3C12912895032600050BC9 /* SafariServices.framework */; };
+		FA3C12942895033900050BC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3C12932895033900050BC9 /* SystemConfiguration.framework */; };
+		FA3C12962895034600050BC9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3C12952895034600050BC9 /* libz.tbd */; };
 		FA70835E28937F26007C0514 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA70835D28937F26007C0514 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +49,12 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DoCheck/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-DoCheck-DoCheckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoCheck-DoCheckTests.release.xcconfig"; path = "Target Support Files/Pods-DoCheck-DoCheckTests/Pods-DoCheck-DoCheckTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FA3C128F2895031400050BC9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		FA3C12912895032600050BC9 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		FA3C12932895033900050BC9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA3C12952895034600050BC9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FA70835D28937F26007C0514 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAB7D61428938BD200CAD273 /* DoCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DoCheck.entitlements; path = DoCheck/DoCheck.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3C12962895034600050BC9 /* libz.tbd in Frameworks */,
+				FA3C12942895033900050BC9 /* SystemConfiguration.framework in Frameworks */,
+				FA3C12922895032600050BC9 /* SafariServices.framework in Frameworks */,
+				FA3C12902895031400050BC9 /* AddressBook.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-DoCheck.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +101,7 @@
 		13B07FAE1A68108700A75B9A /* DoCheck */ = {
 			isa = PBXGroup;
 			children = (
+				FAB7D61428938BD200CAD273 /* DoCheck.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -101,6 +115,10 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA3C12952895034600050BC9 /* libz.tbd */,
+				FA3C12932895033900050BC9 /* SystemConfiguration.framework */,
+				FA3C12912895032600050BC9 /* SafariServices.framework */,
+				FA3C128F2895031400050BC9 /* AddressBook.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-DoCheck.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-DoCheck-DoCheckTests.a */,
@@ -503,7 +521,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DoCheck/DoCheck.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP3F879383;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DoCheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -515,7 +535,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.docheck.docheck;
 				PRODUCT_NAME = DoCheck;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -529,7 +549,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DoCheck/DoCheck.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JP3F879383;
 				INFOPLIST_FILE = DoCheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,7 +562,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.docheck.docheck;
 				PRODUCT_NAME = DoCheck;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

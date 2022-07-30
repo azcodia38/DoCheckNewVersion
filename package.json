@@ -10,7 +10,12 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@invertase/react-native-apple-authentication": "^2.2.2",
+    "@luvies/lazy": "^1.7.2",
+    "@notifee/react-native": "^5.5.0",
     "@react-native-firebase/app": "^15.2.0",
+    "@react-native-firebase/messaging": "^15.2.0",
+    "@react-native-google-signin/google-signin": "^8.0.0",
     "react": "18.0.0",
     "react-native": "0.69.3"
   },

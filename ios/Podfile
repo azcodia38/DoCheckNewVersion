@@ -15,6 +15,7 @@ target 'DoCheck' do
   pod 'Firebase', :modular_headers => true
   pod 'FirebaseCore', :modular_headers => true
   pod 'GoogleUtilities', :modular_headers => true
+  pod 'GoogleSignIn', '~> 6.2.2'
   $RNFirebaseAsStaticFramework = true
 
   use_react_native!(
