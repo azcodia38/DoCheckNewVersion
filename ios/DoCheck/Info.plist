@@ -4,6 +4,14 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Aplikasi ini membutuhkan akses kamera untuk memilih gambar profil</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Aplikasi ini membutuhkan akses mikrofon untuk menyimpan task dalam bentuk suara</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Aplikasi ini membutuhkan akses galeri untuk memilih gambar profil</string>
+	<!-- <key>NSMicrophoneUsageDescription</key>
+	<string>Give $(PRODUCT_NAME) permission to use your microphone. Your record wont be shared without your permission.</string>cd  -->
 	<key>CFBundleDisplayName</key>
 	<string>DoCheck</string>
 	<key>CFBundleExecutable</key>
