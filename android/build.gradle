@@ -12,6 +12,7 @@ buildscript {
         kotlinVersion = '1.6.0'
         googlePlayServicesIidVersion = "17.0.0" 
         firebaseIidVersion = "19.0.1"
+        androidXCore = "1.7.0"
         
         if (System.properties['os.arch'] == "aarch64") {
             // For M1 Users we need to use the NDK 24 which added support for aarch64
