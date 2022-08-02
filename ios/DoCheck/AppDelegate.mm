@@ -11,6 +11,8 @@
 // #import <RNCPushNotificationIOS.h>
 
 #import <React/RCTAppSetupUtils.h>
+// #import <RNGoogleSignin/RNGoogleSignin.h>
+#import <RNGoogleSignin/RNGoogleSignin.h>
 
 #if RCT_NEW_ARCH_ENABLED
 #import <React/CoreModulesPlugins.h>
@@ -81,6 +83,14 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 {
   // Switch this bool to turn on and off the concurrent root
   return true;
+}
+
+// (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
+//   return [RNGoogleSignin application:application openURL:url options:options];
+// }
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
+  return [RNGoogleSignin application:application openURL:url options:options];
 }
 
 - (NSDictionary *)prepareInitialProps
