@@ -192,27 +192,27 @@ export default function LoginPage(props: LoginPageProps) {
         ]
     )
 
-    const actionLoginFB = useCallback(async () => {
-        try {
-            LoginManager.logOut()
-            const result: any = await LoginManager.logInWithPermissions([
-                'public_profile',
-            ])
+    // const actionLoginFB = useCallback(async () => {
+    //     try {
+    //         LoginManager.logOut()
+    //         const result: any = await LoginManager.logInWithPermissions([
+    //             'public_profile',
+    //         ])
 
-            if (result.isCancelled) throw new Error('Login cancelled')
+    //         if (result.isCancelled) throw new Error('Login cancelled')
 
-            const data = await AccessToken.getCurrentAccessToken()
-            if (!data?.accessToken) {
-                DebugAlert(`Facebook login failed`)
-                return
-            }
+    //         const data = await AccessToken.getCurrentAccessToken()
+    //         if (!data?.accessToken) {
+    //             DebugAlert(`Facebook login failed`)
+    //             return
+    //         }
 
-            setLoadingLoginToken(true)
-            submitLoginThirdParty('facebook', data?.accessToken)
-        } catch (err) {
-            // console.log(err);
-        }
-    }, [LoginManager, AccessToken, setLoadingLoginToken, submitLoginThirdParty])
+    //         setLoadingLoginToken(true)
+    //         submitLoginThirdParty('facebook', data?.accessToken)
+    //     } catch (err) {
+    //         // console.log(err);
+    //     }
+    // }, [LoginManager, AccessToken, setLoadingLoginToken, submitLoginThirdParty])
 
     const actionLoginGoogle = useCallback(async () => {
         try {
@@ -306,7 +306,7 @@ export default function LoginPage(props: LoginPageProps) {
             <DocheckSafeAreaView>
                 <ScrollView>
                     <LoginForm
-                        actionLoginFB={actionLoginFB}
+                        // actionLoginFB={actionLoginFB}
                         actionLoginGoogle={actionLoginGoogle}
                         dataCredential={{
                             email,

@@ -48,7 +48,7 @@ interface LoginFormProps {
     submitLogin: () => Promise<void>
     gotoReport: () => void
     onAppleButtonPress: () => Promise<void>
-    actionLoginFB: () => Promise<void>
+    // actionLoginFB: () => Promise<void>
     actionLoginGoogle: () => Promise<void>
     gotoLupaKataSandi: () => void
     setShowPassword: (status: boolean) => void
@@ -63,7 +63,7 @@ export default function LoginForm({
     dataCredential: { email, emailError, password, passwordError },
     gotoRegister,
     loading,
-    actionLoginFB,
+    // actionLoginFB,
     actionLoginGoogle,
     enableButton,
     gotoLupaKataSandi,
